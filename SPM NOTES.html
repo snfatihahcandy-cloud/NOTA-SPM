@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Nota SPM</title>
+    <style>
+        /* Tetapan Asas */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+        }
+
+        /* Gaya Kad Subjek */
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-top: 10px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.6rem;
+        }
+
+        .card p {
+            color: #777;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        /* Gaya Butang */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* --- TEMA WARNA SETIAP SUBJEK --- */
+
+        /* Bahasa Melayu - Merah */
+        .bm { border-top-color: #e74c3c; }
+        .bm h2 { color: #c0392b; }
+        .bm .btn { background-color: #e74c3c; }
+
+        /* Sejarah - Jingga */
+        .sejarah { border-top-color: #f39c12; }
+        .sejarah h2 { color: #d35400; }
+        .sejarah .btn { background-color: #f39c12; }
+
+        /* Matematik - Biru */
+        .math { border-top-color: #3498db; }
+        .math h2 { color: #2980b9; }
+        .math .btn { background-color: #3498db; }
+
+        /* Sains - Hijau */
+        .sains { border-top-color: #2ecc71; }
+        .sains h2 { color: #27ae60; }
+        .sains .btn { background-color: #2ecc71; }
+
+        /* Bahasa Inggeris - Ungu */
+        .bi { border-top-color: #9b59b6; }
+        .bi h2 { color: #8e44ad; }
+        .bi .btn { background-color: #9b59b6; }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portal Nota SPM</h1>
+    <p>Pusat ulangkaji nota padat dan latihan terbaik anda.</p>
+</header>
+
+<div class="grid-container">
+    
+    <div class="card bm">
+        <div>
+            <h2>Bahasa Melayu</h2>
+            <p>Nota Karangan, Tatabahasa, Rumusan & KOMSAS.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1qtEunZmzJSHrNnFN6ICITTDEGGA1Jtd4?usp=sharing" class="btn" target="_blank">Buka Nota PDF</a>
+    </div>
+
+    <div class="card sejarah">
+        <div>
+            <h2>Sejarah</h2>
+            <p>Nota Padat KSSM Tingkatan 4 & 5 mengikut Bab.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1ChAHp8Zh3bI_rrej0GOzNcvyCEga5hkG?usp=sharing" class="btn" target="_blank">Buka Nota PDF</a>
+    </div>
+
+    <div class="card math">
+        <div>
+            <h2>Matematik</h2>
+            <p>Koleksi Rumus, Contoh Jalan Kerja & Latihan.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1ChAHp8Zh3bI_rrej0GOzNcvyCEga5hkG?usp=sharing" class="btn" target="_blank">Buka Nota PDF</a>
+    </div>
+
+    <div class="card sains">
+        <div>
+            <h2>Sains</h2>
+            <p>Fakta Sains, Teknik Menjawab & Eksperimen.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1FkOUhrhC0SWM2Z9tdKHmfuu1fvyAk6ao?usp=sharing" class="btn" target="_blank">Buka Nota PDF</a>
+    </div>
+
+    <div class="card bi">
+        <div>
+            <h2>Bahasa Inggeris</h2>
+            <p>English Essays, Grammar & Literature notes.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1l5SsOX9VGGYKN8o8nMbErsXvV8lPv2tW?usp=sharing" class="btn" target="_blank">Buka Nota PDF</a>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2024 Portal Nota SPM | Dibina untuk Kejayaan Pelajar
+</footer>
+
+</body>
+</html>
